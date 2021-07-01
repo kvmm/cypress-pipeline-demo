@@ -6,6 +6,7 @@ const config = fs.readFileSync(path.join(__dirname, '../cypress.json'), { encodi
 
 // Adding the username and password from the variable group
 const configJson = JSON.parse(config);
+console.log(`Config: ${configJson}`)
 configJson.env = {
   username: process.env.USERNAME,
   password: process.env.PASSWORD,
