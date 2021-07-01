@@ -51,6 +51,7 @@ steps:
         RUN_CMD="$RUN_CMD --record --parallel --group \"${{ parameters.browserType }}\" --ci-build-id $BUILDID"
       fi
 
+
       eval $VERIFY_CMD
       eval $RUN_CMD
     displayName: 'Run the cypress tests'
