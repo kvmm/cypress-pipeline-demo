@@ -23,7 +23,7 @@ steps:
   #     path: $(CYPRESS_CACHE_FOLDER)
 
   - script: |
-      npm ci
+      npm i
     displayName: 'Install project dependencies'
 
   - script: |
